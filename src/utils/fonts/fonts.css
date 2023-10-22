@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "NunitoSans";
+  src: local("Nunito Sans-Regular"),
+    local("NunitoSans Regular"),
+    url("./NunitoSans-Regular.woff2") format("woff2"),
+    url("./NunitoSans-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("./NunitoSans-Bold.woff2") format("woff2"),
+    url("./NunitoSans-Bold.woff") format("woff");
+    
+  font-weight: 700;
+}
+
