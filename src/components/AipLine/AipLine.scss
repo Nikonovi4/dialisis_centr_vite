@@ -1,0 +1,17 @@
+.line {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+
+  &__cell {
+    width: 25%;
+    height: 20px;
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  &__open-button {
+  padding: 0;
+  cursor: pointer;
+  }
+}

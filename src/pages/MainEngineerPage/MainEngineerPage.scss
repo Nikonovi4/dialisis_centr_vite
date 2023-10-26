@@ -1,0 +1,9 @@
+.aip-info {
+  &__table {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 0 10px;
+  }
+}

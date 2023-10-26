@@ -1,0 +1,33 @@
+.repair-form {
+  margin-left: 50px;
+  margin-right: 50px;
+
+  &__fildset {
+    display: grid;
+    grid-template-columns:30% 70%;
+    grid-template-rows: repeat(4 , 30px);
+    grid-template-areas:
+    "title discription"
+    "operationTime discription"
+    ". discription"
+    "button button";
+    gap: 5px 5px;
+  }
+
+  &__title {
+    grid-area: title
+  }
+
+  &__operationTime{
+    grid-area: operationTime
+  }
+
+  &__discription {
+    grid-area: discription;
+    white-space: normal;
+  }
+  
+  &__submit {
+    grid-area: button
+  }
+}
