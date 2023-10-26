@@ -1,0 +1,33 @@
+.repair-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+
+  &__info {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+  }
+  &__description {
+    width: 75%;
+    margin: 0;
+  }
+  &__edit-button {
+    background-image: url(../../utils/images/edit.png);
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-size: cover;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    &_invisible {
+      display: none;
+    }
+  }
+}
+

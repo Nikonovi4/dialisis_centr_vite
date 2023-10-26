@@ -1,0 +1,49 @@
+.repair-history {
+  &__header {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__header_invisible {
+    display: none;
+  }
+  &__title {
+    font-size: 15px;
+  }
+  &__close-button {
+    background-image: url(../../utils/images/closeIqon.png);
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+  &__list {
+    width: 90%;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    height: 30vh;
+    overflow-y: scroll;
+    background-color: rgb(244, 239, 239);
+    margin-left: 50px;
+    margin-right: 50px;
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: rgba(152, 70, 70, 0.5);
+      -webkit-box-shadow: 0 0 1px rgba(126, 78, 78, 0.5);
+    }
+  }
+}
+
+
