@@ -1,6 +1,6 @@
+/* eslint-disable react/prop-types */
 import RepairForm from "../RepairForm/RepairForm";
 import { EDIT_BUTTON_NAME as saveButtonTitle } from "../../utils/constants/constants";
-/* eslint-disable react/prop-types */
 
 const ChangesRepairHistory = ({
   handleChange,
@@ -11,11 +11,9 @@ const ChangesRepairHistory = ({
   setValues,
   createEditedItem,
 }) => {
-
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    createEditedItem()
+    createEditedItem();
 
     setValues({
       title: "",
@@ -27,7 +25,6 @@ const ChangesRepairHistory = ({
     });
   };
 
-  
   return (
     <RepairForm
       handleChange={handleChange}
@@ -37,7 +34,6 @@ const ChangesRepairHistory = ({
       inputs_name={edit_repair_inputs_names}
       handleSubmit={handleSubmit}
       submitButtonTitle={saveButtonTitle}
-
     />
   );
 };

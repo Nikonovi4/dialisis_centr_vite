@@ -1,5 +1,7 @@
+/* eslint-disable react/prop-types */
 import ErrorsBlock from "../ErrorsBlock/ErrorsBlock";
 import "./RepairForm.scss";
+import { DIGTL_REG as digtl_reg } from "../../utils/constants/constants";
 
 const RepairForm = ({
   handleSubmit,
@@ -7,10 +9,8 @@ const RepairForm = ({
   isValid,
   errors,
   values,
-  digtl_reg,
   inputs_name,
   submitButtonTitle,
-
 }) => {
 
 
@@ -23,7 +23,6 @@ const RepairForm = ({
           placeholder="Название проблемы"
           name={inputs_name.title_input}
           onChange={handleChange}
-          // defaultValue={values.title}
           value={values.title || ''}
           required
           minLength="6"
@@ -34,7 +33,6 @@ const RepairForm = ({
           placeholder="Наработка часов"
           name={inputs_name.operationTime_input}
           onChange={handleChange}
-          // defaultValue={values.operationTime}
           value={values.operationTime || ''}
           minLength="2"
           required
@@ -47,7 +45,6 @@ const RepairForm = ({
           name={inputs_name.description_input}
           onChange={handleChange}
           required
-          // defaultValue={values.description}
           value={values.description || ''}
           minLength="10"
         />
