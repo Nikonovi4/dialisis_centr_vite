@@ -1,7 +1,12 @@
  export const NEW_PATIENT_POPUP_TITLE = 'Введите данные новго пациента';
  export const NEW_AIP_POPUP_TITLE = 'Введите данные новго аппарата';
+
  export const ADD_BUTTON_NAME = 'Добавить';
+ export const EDIT_BUTTON_NAME = 'Изменить';
+ export const SAVE_BUTON_NAME = 'Сохранить';
+
  export const DIGTL_REG = "[0-9]+";
+ 
  export const NEW_REPAIR_INPUTS_NAMES = {
   title_input: 'title',
   description_input: 'description',

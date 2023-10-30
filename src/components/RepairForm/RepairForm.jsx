@@ -13,8 +13,6 @@ const RepairForm = ({
 
 }) => {
 
- 
-
 
   return (
     <form className="repair-form" onSubmit={handleSubmit}>
@@ -26,7 +24,7 @@ const RepairForm = ({
           name={inputs_name.title_input}
           onChange={handleChange}
           // defaultValue={values.title}
-          value={values.title}
+          value={values.title || ''}
           required
           minLength="6"
         />
@@ -37,7 +35,7 @@ const RepairForm = ({
           name={inputs_name.operationTime_input}
           onChange={handleChange}
           // defaultValue={values.operationTime}
-          value={values.operationTime}
+          value={values.operationTime || ''}
           minLength="2"
           required
           pattern={digtl_reg}
@@ -50,7 +48,7 @@ const RepairForm = ({
           onChange={handleChange}
           required
           // defaultValue={values.description}
-          value={values.description}
+          value={values.description || ''}
           minLength="10"
         />
         <button

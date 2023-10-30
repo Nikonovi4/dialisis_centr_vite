@@ -28,6 +28,7 @@ const MainEngineerPage = ({
   isOpenEditForm,
   setOpenEditForm,
   setIsValid,
+  createEditedItem,
 }) => {
   
   const [isOpenPopup, setOpenPopup] = useState(false);
@@ -61,7 +62,7 @@ const MainEngineerPage = ({
         ))}
       </ul>
 
-      {isAipInfo ? (
+      {/* {isAipInfo ? ( */}
         <RepairHistory
           isAipInfo={isAipInfo}
           clearnRepairHisory={clearnRepairHisory}
@@ -76,10 +77,11 @@ const MainEngineerPage = ({
           isOpenEditForm={isOpenEditForm}
           setOpenEditForm={setOpenEditForm}
           setIsValid={setIsValid}
+          createEditedItem={createEditedItem}
         />
-      ) : (
-        ""
-      )}
+      {/* // ) : (
+      //   ""
+      // )} */}
 
 
 

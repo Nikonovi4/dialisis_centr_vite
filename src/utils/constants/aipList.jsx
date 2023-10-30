@@ -7,8 +7,9 @@ const aipList = [
     startUsing: '2020',
     software: '9,1b',
     responsible: 'Брюс Уейн',
+    center: 'Солнцево',
     place: 1,
-    condition: 'serviceable',
+    condition: 'Исправный',
   },
   {
     internalNumber : 2,
@@ -18,8 +19,9 @@ const aipList = [
     startUsing: '2020',
     software: '9,1b',
     responsible: 'Кларк Кент',
+    center: 'Солнцево',
     place: 'reserv',
-    condition: 'inoperative'
+    condition: 'Не испрвный'
   },
   {
     internalNumber : 3,
@@ -29,8 +31,9 @@ const aipList = [
     startUsing: '2020',
     software: '9,1b',
     responsible: 'Бари Ален',
+    center: 'Солнцево',
     place: 2,
-    condition: 'serviceable'
+    condition: 'Повышенный контроль'
   },
   {
     internalNumber : 4,
@@ -40,8 +43,9 @@ const aipList = [
     startUsing: '2020',
     software: '9,1b',
     responsible: 'Брюс Уейн',
+    center: 'Солнцево',
     place: 3,
-    condition: 'serviceable'
+    condition: 'Исправный'
   },
   {
     internalNumber : 5,
@@ -51,8 +55,9 @@ const aipList = [
     startUsing: '2020',
     software: '9,1b',
     responsible: 'Кларк Кент',
+    center: 'Солнцево',
     place: 4,
-    condition: 'serviceable'
+    condition: 'Исправный'
   },
   {
     internalNumber : 6,
@@ -62,8 +67,9 @@ const aipList = [
     startUsing: '2020',
     software: '9,1b',
     responsible: 'Бари Ален',
+    center: 'Солнцево',
     place: 5,
-    condition: 'serviceable'
+    condition: 'Исправный'
   },
   {
     internalNumber : 7,
@@ -73,8 +79,9 @@ const aipList = [
     startUsing: '2020',
     software: '9,1b',
     responsible: 'Брюс Уейн',
+    center: 'Солнцево',
     place: 6,
-    condition: 'serviceable'
+    condition: 'Исправный'
   },
   {
     internalNumber : 8,
@@ -84,8 +91,9 @@ const aipList = [
     startUsing: '2020',
     software: '9,1b',
     responsible: 'Кларк Кент',
+    center: 'Солнцево',
     place: 'reserv',
-    condition: 'serviceable'
+    condition: 'Исправный'
   },
   
 ];

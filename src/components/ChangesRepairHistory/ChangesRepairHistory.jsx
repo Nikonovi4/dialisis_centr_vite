@@ -1,5 +1,6 @@
 import RepairForm from "../RepairForm/RepairForm";
-
+import { EDIT_BUTTON_NAME as saveButtonTitle } from "../../utils/constants/constants";
+/* eslint-disable react/prop-types */
 
 const ChangesRepairHistory = ({
   handleChange,
@@ -7,19 +8,14 @@ const ChangesRepairHistory = ({
   errors,
   changeRepairInputsValue,
   edit_repair_inputs_names,
-  setEditedRepairFormValue,
   setValues,
+  createEditedItem,
 }) => {
 
-  const saveButtonTitle = 'Изменить'
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setEditedRepairFormValue({
-      title: "",
-      operationTime: "",
-      description: "",
-    });
+    createEditedItem()
 
     setValues({
       title: "",
