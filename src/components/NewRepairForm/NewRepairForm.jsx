@@ -9,7 +9,6 @@ const NewRepairForm = ({
   addNewRepair,
   setValues,
   newRepairInputsValue,
-  digtl_reg,
   new_repair_inputs_names,
   setIsValid,
 
@@ -37,7 +36,6 @@ const NewRepairForm = ({
       isValid={isValid}
       errors={errors}
       values={newRepairInputsValue}
-      digtl_reg={digtl_reg}
       inputs_name={new_repair_inputs_names}
       submitButtonTitle={addButtonTitle}
 

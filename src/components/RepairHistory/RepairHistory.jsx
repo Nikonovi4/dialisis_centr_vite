@@ -1,18 +1,20 @@
-import './RepairHistory.scss'
+/* eslint-disable react/prop-types */
+
+import "./RepairHistory.scss";
+
 import RepairList from "../RepairList/RepairList";
 import ChangesRepairHistory from "../ChangesRepairHistory/ChangesRepairHistory";
 import NewRepairForm from "../NewRepairForm/NewRepairForm";
+import Searcher from "../Searcher/Searcher";
+
 import {
-  DIGTL_REG as digtl_reg,
   NEW_REPAIR_INPUTS_NAMES as new_repair_inputs_names,
   EDIT_REPAIR_INPUTS_NAMES as edit_repair_inputs_names,
 } from "../../utils/constants/constants";
-import Searcher from '../Searcher/Searcher';
 
-/* eslint-disable react/prop-types */
 const RepairHistory = ({
   isAipInfo,
-  clearnRepairHisory,
+  setAipInfo,
   handleChange,
   isValid,
   addNewRepair,
@@ -25,70 +27,79 @@ const RepairHistory = ({
   setOpenEditForm,
   setIsValid,
   createEditedItem,
+  setSearchRepairValue
 }) => {
-
-
   const newRepairInputsValue = {
     title: values.title,
     description: values.description,
-    operationTime: values.operationTime
-  }
+    operationTime: values.operationTime,
+  };
 
   const changeRepairInputsValue = {
     title: values.edit_title,
     description: values.edit_description,
-    operationTime: values.edit_operationTime
-  }
+    operationTime: values.edit_operationTime,
+  };
 
+  const clearnRepairHisory = () => {
+    setAipInfo("");
+    setValues({
+      title: "",
+      operationTime: "",
+      description: "",
+    });
+  };
 
-  return(
-    <section className={`${isAipInfo ? "repair-history" : "repair-history_invisible"}`}>
-    <div
-      className= "repair-history__header"
+  return (
+    <section
+      className={`${isAipInfo ? "repair-history" : "repair-history_invisible"}`}
     >
-      <h2 className="repair-history__title">{`История обслуживания аппарата ${isAipInfo.internalNumber}`}</h2>
-      <Searcher />
-      <button
-        className="repair-history__close-button"
-        aria-label="кнопка закрытия всплывающего окна."
-        type="button"
-        onClick={clearnRepairHisory}
-      ></button>
-    </div>
+      <div className="repair-history__header">
+        <h2 className="repair-history__title">{`История обслуживания аппарата ${isAipInfo.internalNumber}`}</h2>
+        <Searcher handleChange={handleChange} setSearchValue={setSearchRepairValue} />
+        <button
+          className="repair-history__close-button"
+          aria-label="кнопка закрытия всплывающего окна."
+          type="button"
+          onClick={clearnRepairHisory}
+        ></button>
+      </div>
 
-    <ul className="repair-history__list">
-      {isRenderRepairHistory?.map((el, i) => (
-        <RepairList data={el} key ={i} setEditedRepairItem={setEditedRepairItem} setOpenEditForm={setOpenEditForm} />
-      ))}
-    </ul>
-    
-    {isOpenEditForm ? (
-      <ChangesRepairHistory
-        handleChange={handleChange}
-        isValid={isValid}
-        errors={errors}
-        changeRepairInputsValue={changeRepairInputsValue}
-        edit_repair_inputs_names={edit_repair_inputs_names}
-        setValues={setValues}
-        createEditedItem={createEditedItem}
-      />
-    ) : (
-      <NewRepairForm
-        handleChange={handleChange}
-        isValid={isValid}
-        errors={errors}
-        addNewRepair={addNewRepair}
-        setValues={setValues}
-        newRepairInputsValue={newRepairInputsValue}
-        // values={values}
-        digtl_reg={digtl_reg}
-        new_repair_inputs_names={new_repair_inputs_names}
-        setIsValid={setIsValid}
-    
-      />
-    )}
-  </section>
-  )
+      <ul className="repair-history__list">
+        {isRenderRepairHistory?.map((el, i) => (
+          <RepairList
+            data={el}
+            key={i}
+            setEditedRepairItem={setEditedRepairItem}
+            setOpenEditForm={setOpenEditForm}
+          />
+        ))}
+      </ul>
+
+      {isOpenEditForm ? (
+        <ChangesRepairHistory
+          handleChange={handleChange}
+          isValid={isValid}
+          errors={errors}
+          changeRepairInputsValue={changeRepairInputsValue}
+          edit_repair_inputs_names={edit_repair_inputs_names}
+          setValues={setValues}
+          createEditedItem={createEditedItem}
+        />
+      ) : (
+        <NewRepairForm
+          handleChange={handleChange}
+          isValid={isValid}
+          errors={errors}
+          addNewRepair={addNewRepair}
+          setValues={setValues}
+          newRepairInputsValue={newRepairInputsValue}
+          new_repair_inputs_names={new_repair_inputs_names}
+          setIsValid={setIsValid}
+        />
+      )}
+    </section>
+  );
 };
 
 export default RepairHistory;
