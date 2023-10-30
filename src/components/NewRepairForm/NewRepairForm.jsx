@@ -1,4 +1,6 @@
 import RepairForm from "../RepairForm/RepairForm";
+import { SAVE_BUTON_NAME as addButtonTitle } from "../../utils/constants/constants";
+/* eslint-disable react/prop-types */
 
 const NewRepairForm = ({
   handleChange,
@@ -12,8 +14,6 @@ const NewRepairForm = ({
   setIsValid,
 
 }) => {
-
-  const addButtonTitle = 'Сохранить'
 
   const handleSubmit = (e) => {
     e.preventDefault();

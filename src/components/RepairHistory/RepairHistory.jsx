@@ -7,8 +7,9 @@ import {
   NEW_REPAIR_INPUTS_NAMES as new_repair_inputs_names,
   EDIT_REPAIR_INPUTS_NAMES as edit_repair_inputs_names,
 } from "../../utils/constants/constants";
-import { compileString } from 'sass';
+import Searcher from '../Searcher/Searcher';
 
+/* eslint-disable react/prop-types */
 const RepairHistory = ({
   isAipInfo,
   clearnRepairHisory,
@@ -22,7 +23,8 @@ const RepairHistory = ({
   setEditedRepairItem,
   isOpenEditForm,
   setOpenEditForm,
-  setIsValid
+  setIsValid,
+  createEditedItem,
 }) => {
 
 
@@ -40,13 +42,12 @@ const RepairHistory = ({
 
 
   return(
-    <section className="repair-history">
+    <section className={`${isAipInfo ? "repair-history" : "repair-history_invisible"}`}>
     <div
-      className={`${
-        isAipInfo ? "repair-history__header" : "repair-hisory__header_invisible"
-      }`}
+      className= "repair-history__header"
     >
       <h2 className="repair-history__title">{`История обслуживания аппарата ${isAipInfo.internalNumber}`}</h2>
+      <Searcher />
       <button
         className="repair-history__close-button"
         aria-label="кнопка закрытия всплывающего окна."
@@ -69,6 +70,7 @@ const RepairHistory = ({
         changeRepairInputsValue={changeRepairInputsValue}
         edit_repair_inputs_names={edit_repair_inputs_names}
         setValues={setValues}
+        createEditedItem={createEditedItem}
       />
     ) : (
       <NewRepairForm

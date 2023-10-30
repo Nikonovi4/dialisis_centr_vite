@@ -1,8 +1,6 @@
 const repairList = [
-  {
-    aipNumber: "000001",
-    repair: [
       {
+        aipNumber: "000001",
         date: "01-09-2023",
         responsible: "Брюс Уейн",
         type: "Ремонт",
@@ -14,6 +12,7 @@ const repairList = [
         _id: "11",
       },
       {
+        aipNumber: "000001",
         date: "05-09-2023",
         responsible: "Кларк Кент",
         type: "Обслуживание",
@@ -25,6 +24,7 @@ const repairList = [
         _id: "12",
       },
       {
+        aipNumber: "000001",
         date: "15-09-2023",
         responsible: "Кларк Кент",
         type: "Диагностика",
@@ -35,12 +35,8 @@ const repairList = [
         owner: "222222",
         _id: "13",
       },
-    ],
-  },
-  {
-    aipNumber: "000002",
-    repair: [
       {
+        aipNumber: "000002",
         date: "02-09-2023",
         responsible: "Брюс Уейн",
         type: "Ремонт",
@@ -52,6 +48,7 @@ const repairList = [
         _id: "14",
       },
       {
+        aipNumber: "000002",
         date: "05-09-2023",
         responsible: "Кларк Кент",
         type: "Обслуживание",
@@ -63,6 +60,7 @@ const repairList = [
         _id: "15",
       },
       {
+        aipNumber: "000002",
         date: "15-09-2023",
         responsible: "Кларк Кент",
         type: "Диагностика",
@@ -73,12 +71,8 @@ const repairList = [
         owner: "222222",
         _id: "16",
       },
-    ],
-  },
-  {
-    aipNumber: "000003",
-    repair: [
       {
+        aipNumber: "000003",
         date: "03-09-2023",
         responsible: "Брюс Уейн",
         type: "Ремонт",
@@ -90,6 +84,7 @@ const repairList = [
         _id: "17",
       },
       {
+        aipNumber: "000003",
         date: "05-09-2023",
         responsible: "Кларк Кент",
         type: "Обслуживание",
@@ -101,6 +96,7 @@ const repairList = [
         _id: "18",
       },
       {
+        aipNumber: "000003",
         date: "15-09-2023",
         responsible: "Кларк Кент",
         type: "Диагностика",
@@ -111,12 +107,8 @@ const repairList = [
         owner: "222222",
         _id: "19",
       },
-    ],
-  },
-  {
-    aipNumber: "000004",
-    repair: [
       {
+        aipNumber: "000004",
         date: "04-09-2023",
         responsible: "Брюс Уейн",
         type: "Ремонт",
@@ -128,6 +120,7 @@ const repairList = [
         _id: "20",
       },
       {
+        aipNumber: "000004",
         date: "05-09-2023",
         responsible: "Кларк Кент",
         type: "Обслуживание",
@@ -139,6 +132,7 @@ const repairList = [
         _id: "21",
       },
       {
+        aipNumber: "000004",
         date: "15-09-2023",
         responsible: "Кларк Кент",
         type: "Диагностика",
@@ -149,12 +143,8 @@ const repairList = [
         owner: "222222",
         _id: "22",
       },
-    ],
-  },
-  {
-    aipNumber: "000005",
-    repair: [
       {
+        aipNumber: "000005",
         date: "05-09-2023",
         responsible: "Брюс Уейн",
         type: "Ремонт",
@@ -166,6 +156,7 @@ const repairList = [
         _id: "23",
       },
       {
+        aipNumber: "000005",
         date: "05-09-2023",
         responsible: "Кларк Кент",
         type: "Обслуживание",
@@ -177,6 +168,7 @@ const repairList = [
         _id: "24",
       },
       {
+        aipNumber: "000005",
         date: "15-09-2023",
         responsible: "Кларк Кент",
         type: "Диагностика",
@@ -187,12 +179,8 @@ const repairList = [
         owner: "222222",
         _id: "25",
       },
-    ],
-  },
-  {
-    aipNumber: "000006",
-    repair: [
       {
+        aipNumber: "000006",
         date: "06-09-2023",
         responsible: "Брюс Уейн",
         type: "Ремонт",
@@ -204,6 +192,7 @@ const repairList = [
         _id: "26",
       },
       {
+        aipNumber: "000006",
         date: "05-09-2023",
         responsible: "Кларк Кент",
         type: "Обслуживание",
@@ -215,6 +204,7 @@ const repairList = [
         _id: "27",
       },
       {
+        aipNumber: "000006",
         date: "15-09-2023",
         responsible: "Кларк Кент",
         type: "Диагностика",
@@ -225,12 +215,8 @@ const repairList = [
         owner: "222222",
         _id: "28",
       },
-    ],
-  },
-  {
-    aipNumber: "000007",
-    repair: [
       {
+        aipNumber: "000007",
         date: "07-09-2023",
         responsible: "Брюс Уейн",
         type: "Ремонт",
@@ -242,6 +228,7 @@ const repairList = [
         _id: "29",
       },
       {
+        aipNumber: "000007",
         date: "05-09-2023",
         responsible: "Кларк Кент",
         type: "Обслуживание",
@@ -253,6 +240,7 @@ const repairList = [
         _id: "30",
       },
       {
+        aipNumber: "000007",
         date: "15-09-2023",
         responsible: "Кларк Кент",
         type: "Диагностика",
@@ -263,12 +251,8 @@ const repairList = [
         owner: "222222",
         _id: "31",
       },
-    ],
-  },
-  {
-    aipNumber: "000008",
-    repair: [
       {
+        aipNumber: "000008",
         date: "08-09-2023",
         responsible: "Брюс Уейн",
         type: "Ремонт",
@@ -280,6 +264,7 @@ const repairList = [
         _id: "32",
       },
       {
+        aipNumber: "000008",
         date: "05-09-2023",
         responsible: "Кларк Кент",
         type: "Обслуживание",
@@ -291,6 +276,7 @@ const repairList = [
         _id: "33",
       },
       {
+        aipNumber: "000008",
         date: "15-09-2023",
         responsible: "Кларк Кент",
         type: "Диагностика",
@@ -301,8 +287,6 @@ const repairList = [
         owner: "222222",
         _id: "34",
       },
-    ],
-  },
 ];
 
 export default repairList;

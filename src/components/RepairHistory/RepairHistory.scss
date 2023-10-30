@@ -1,4 +1,13 @@
 .repair-history {
+  height: 60vh;
+  transition: all 0.7s ease-in-out;
+  overflow: hidden;
+
+  &_invisible {
+    transform: translateY(110%);
+    transition: all 0.7s ease-in-out;
+    overflow: hidden;
+  }
   &__header {
     display: flex;
     flex-direction: row;
