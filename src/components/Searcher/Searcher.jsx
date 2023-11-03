@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-const Searcher = ({ handleChange, setSearchValue }) => {
+const Searcher = ({ handleChange, setSearchValue, values }) => {
   const handleSearchRepair = (e) => {
     e.preventDefault();
     setSearchValue(e.target.elements["searcher"].value);
@@ -18,6 +18,7 @@ const Searcher = ({ handleChange, setSearchValue }) => {
           placeholder="Что ищем?"
           className="searcher__input"
           name="searcher"
+          value={values.searcher || ''}
           onChange={handleChange}
         />
         <button type="submit" className="searcher__button">

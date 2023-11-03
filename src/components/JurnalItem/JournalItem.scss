@@ -1,0 +1,7 @@
+.journal-item {
+  &__edit-button {
+    &_invisible {
+      display: none;
+    }
+  }
+}

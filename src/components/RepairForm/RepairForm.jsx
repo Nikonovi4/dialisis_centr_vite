@@ -41,6 +41,8 @@ const RepairForm = ({
         <textarea
           className="repair-form__input repair-form__discription"
           type="text"
+          wrap='hard'
+          spellCheck='true'
           placeholder="Описание работ"
           name={inputs_name.description_input}
           onChange={handleChange}

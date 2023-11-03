@@ -27,7 +27,8 @@ const RepairHistory = ({
   setOpenEditForm,
   setIsValid,
   createEditedItem,
-  setSearchRepairValue
+  setSearchRepairValue,
+  setErrors
 }) => {
   const newRepairInputsValue = {
     title: values.title,
@@ -43,11 +44,9 @@ const RepairHistory = ({
 
   const clearnRepairHisory = () => {
     setAipInfo("");
-    setValues({
-      title: "",
-      operationTime: "",
-      description: "",
-    });
+    setValues({});
+    setSearchRepairValue('');
+    setErrors('')
   };
 
   return (
@@ -56,7 +55,7 @@ const RepairHistory = ({
     >
       <div className="repair-history__header">
         <h2 className="repair-history__title">{`История обслуживания аппарата ${isAipInfo.internalNumber}`}</h2>
-        <Searcher handleChange={handleChange} setSearchValue={setSearchRepairValue} />
+        <Searcher handleChange={handleChange} setSearchValue={setSearchRepairValue} values={values}/>
         <button
           className="repair-history__close-button"
           aria-label="кнопка закрытия всплывающего окна."
