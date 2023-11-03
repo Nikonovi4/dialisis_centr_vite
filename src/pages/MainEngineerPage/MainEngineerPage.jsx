@@ -24,6 +24,7 @@ const MainEngineerPage = ({
   setValues,
   errors,
   setIsValid,
+  setErrors,
 }) => {
   const [isRepairList, setRepairList] = useState(repairList || []);
   //стейт поиска ремонта
@@ -155,6 +156,7 @@ const MainEngineerPage = ({
         setIsValid={setIsValid}
         createEditedItem={createEditedItem}
         setSearchRepairValue={setSearchRepairValue}
+        setErrors={setErrors}
       />
 
       <Popup
