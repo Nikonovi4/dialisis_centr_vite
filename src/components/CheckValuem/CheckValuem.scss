@@ -1,0 +1,13 @@
+.valuems-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #000;
+  width: 100px;
+  
+
+  &__item{
+    border-bottom: 1px solid #000;
+    font-size: 14px;
+  }
+}

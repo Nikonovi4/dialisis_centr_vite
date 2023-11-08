@@ -16,7 +16,7 @@
 
 &__content {
   width: 50vw;
-  height: 70vh;
+  height: 90vh;
   border-radius: 10px;
   background-color: #ffff;
   position: relative;
@@ -40,6 +40,16 @@
 
 &__fildset {
   border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+&__label {
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 &__inputs {
