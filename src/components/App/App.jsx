@@ -3,20 +3,24 @@ import { useState } from "react";
 
 import LoginPage from "../../pages/LoginPage/LoginPage";
 import MainEngineerPage from "../../pages/MainEngineerPage/MainEngineerPage";
+import JournalPage from "../../pages/JournallPage/JournalPage";
+import CheckWaterPage from "../../pages/CheckWaterPage/CheckWaterPage";
 
 import { userInfo } from "../../utils/constants/userInfo";
-import JournalPage from "../../pages/JournallPage/JournalPage";
 
 const App = () => {
-  const [values, setValues] = useState({
-    title: "",
-    description: "",
-    operationTime: "",
-    edit_title: "",
-    edit_description: "",
-    edit_operationTime: "",
+  const [values, setValues] = useState('')
+    // title: "",
+    // description: "",
+    // operationTime: "",
+    // edit_title: "",
+    // edit_description: "",
+    // edit_operationTime: "",
     
-  });
+  // });
+
+// //Состояние чекбоксов
+// const [isClickedCheckbox, setClickedCheckbox] = useState()
 
   const [errors, setErrors] = useState({});
   const [isValid, setIsValid] = useState(false);
@@ -25,10 +29,14 @@ const App = () => {
     const target = e.target;
     const name = target.name;
     const value = target.value;
-    setValues({ ...values, [name]: value });
+    // const cklicked = target.checked
+    setValues({ ...values, [name]: value});
     setErrors({ ...errors, [name]: target.validationMessage });
     setIsValid(target.closest("form").checkValidity());
+    
   };
+
+  console.log(values)
 
   return (
     <Routes>
@@ -59,6 +67,15 @@ const App = () => {
             setValues={setValues}
           />
         }
+      />
+      <Route path="/water"
+      element={<CheckWaterPage  
+        handleChange={handleChange}
+        isValid={isValid}
+        userInfo={userInfo}
+        values={values}
+        setValues={setValues}
+      />}
       />
     </Routes>
   );
