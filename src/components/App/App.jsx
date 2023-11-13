@@ -10,17 +10,6 @@ import { userInfo } from "../../utils/constants/userInfo";
 
 const App = () => {
   const [values, setValues] = useState('')
-    // title: "",
-    // description: "",
-    // operationTime: "",
-    // edit_title: "",
-    // edit_description: "",
-    // edit_operationTime: "",
-    
-  // });
-
-// //Состояние чекбоксов
-// const [isClickedCheckbox, setClickedCheckbox] = useState()
 
   const [errors, setErrors] = useState({});
   const [isValid, setIsValid] = useState(false);
@@ -29,14 +18,10 @@ const App = () => {
     const target = e.target;
     const name = target.name;
     const value = target.value;
-    // const cklicked = target.checked
     setValues({ ...values, [name]: value});
     setErrors({ ...errors, [name]: target.validationMessage });
     setIsValid(target.closest("form").checkValidity());
-    
   };
-
-  console.log(values)
 
   return (
     <Routes>
