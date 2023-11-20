@@ -1,0 +1,25 @@
+.dropdowncentr {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &__button{
+    border: none;
+    cursor: pointer;
+  }
+  &__list{
+    list-style: none;
+    padding: 5px;
+    margin-top: 25px;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: -2px 2px 3px 1px  #000;
+ 
+  }
+  &__item{
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+}

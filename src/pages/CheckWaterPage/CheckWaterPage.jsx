@@ -113,9 +113,6 @@ const CheckWaterPage = ({
   }, [isChartObject, isRenderPreparationList]);
 
   //убираем кнопку построения графика
-
-
-
   const listWithoutButton =  []
 
   for (let i = 0; i <waterTableNames.length; i++){
@@ -124,9 +121,7 @@ const CheckWaterPage = ({
     }
   }
 
-  console.log(listWithoutButton)
   
-
   return (
     <section className="water">
       <div className="table">

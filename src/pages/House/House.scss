@@ -1,0 +1,78 @@
+.house {
+  background-color: #332f2c;
+
+  &__block1 {
+    width: 100vw;
+    height: 65vh;
+    background-image: url(./img/1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    transition: opacity 2s;
+    
+  }
+  &__block2 {
+    width: 100vw;
+    height: 65vh;
+    background-image: url(./img/2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    opacity: 0.1;
+    transition: opacity 2s;
+  }
+  &__block3 {
+    width: 100vw;
+    height: 65vh;
+    background-image: url(./img/3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    opacity: 0.1;
+    transition: opacity 2s;
+
+  }
+  &__block4 {
+    width: 100vw;
+    height: 65vh;
+    background-image: url(./img/4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    opacity: 0.1;
+    transition: opacity 2s;
+
+  }
+  &__block5 {
+    width: 100vw;
+    height: 65vh;
+    background-image: url(./img/5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    opacity: 0.1;
+    transition: opacity 2s;
+  }
+  &__block6 {
+    width: 100vw;
+    height: 65vh;
+
+    margin-top: 20px;
+    opacity: 0.1;
+    transition: opacity 2s;
+  }
+}
+
+
+.block1__text {
+  display: block;
+  width: 300px;
+  color: #fff;
+  font-size: 20px;
+}
+
+
+.active {
+  opacity: 1;
+  transition: opacity .5s;
+}
