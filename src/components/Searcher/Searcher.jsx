@@ -1,13 +1,16 @@
 /* eslint-disable react/prop-types */
 
-const Searcher = ({ handleChange, setSearchValue, values }) => {
+const Searcher = ({ handleChange, setSearchValue, values, setValues }) => {
   const handleSearchRepair = (e) => {
     e.preventDefault();
     setSearchValue(e.target.elements["searcher"].value);
   };
 
+
+
   const deleteRearch = () => {
     setSearchValue("")
+    setValues('')
   }
 
   return (
